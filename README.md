@@ -21,6 +21,6 @@ java -jar .\target\{PACKAGE_NAME} -- Deploys the jar with the console (can be do
 
 # Redirect and forward
 
-* redirect: takes the value to redirect ("index" or can use a third-party ("https:www.google.com")
+* redirect: takes the value to redirect ("index" or can use a third-party ("https://www.google.com")
 * forward: takes the value to redirect but the URI stays the same, useful for HOME URIs, can't use third-party
 
