@@ -1,17 +1,13 @@
-# Project Title
+# Spring-MVC-Example
 
-One Paragraph of project description goes here
+Basic use of Spring MVC
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+### Deploy with CMD
 
 ```
-Give examples
+.\mvnw.cmd package -- descarga dependencias de Maven y crea el jar correspondiente al proyecto (tambien sirve mvn install en el IDE)
+
+java -jar .\target\{PACKAGE_NAME} -- sube la aplicacion por consola (se puede hacer el VPS y terminal SSH)
 ```
 
 ### Installing
