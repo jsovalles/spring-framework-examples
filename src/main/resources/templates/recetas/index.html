@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas de la abuela</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/estilos.css}">
+</head>
+
+<body>
+    <div id="encabezado">
+        <h1>Recetas de la abuela</h1>
+        <h2>Deliciosas recetas caseras</h2>
+    </div>
+    <ul id="navegacion">
+        <li class="actual"> <a th:href="@{/recetas/home}">Home</a></li>
+        <li> <a th:href="@{/recetas/carne_al_horno}">Carne al horno</a></li>
+        <li> <a th:href="@{/recetas/brownies}">Brownies</a></li>
+    </ul>
+    <div id="contenido_principal">
+        <h3>Home</h3>
+        <p>Los invitamos a probar</p>
+    </div>
+</body>
+
+</html>
