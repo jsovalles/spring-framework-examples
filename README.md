@@ -5,9 +5,9 @@ Basic use of Spring MVC
 ### Deploy with CMD
 
 ```
-.\mvnw.cmd package -- descarga dependencias de Maven y crea el jar correspondiente al proyecto (tambien sirve mvn install en el IDE)
+.\mvnw.cmd package -- Download the corresponding maven dependencias and creates the corresponding JAR on target (mvn install from the IDE works as well)
 
-java -jar .\target\{PACKAGE_NAME} -- sube la aplicacion por consola (se puede hacer el VPS y terminal SSH)
+java -jar .\target\{PACKAGE_NAME} -- Deploys the jar with the console (can be done with VPS and SSH)
 ```
 
 ### Installing
