@@ -75,6 +75,26 @@ To avoid POST multiple consumes you must redirect to the other URI, mostly to av
 Once you end the form process it will only show on the GET on the redirect, since its only a session object and will be destroyed after its completed
 So, if someone wants to reload the GET it will redirect to the form (POST) so they can start over again
 For future references, it can be redirected with the ID if the corresponding form/user, but since we're not working with database it can't be done
+
+HandleInterceptor -- interface for the multiple handles, will be used on the interceptor package
+
+We create on the main package a class called MvcConfig
+It will be used to implement WebMvcConfigurer, it will allow us to add the Interceptors created on the package interceptor
+
+thymeleaf fragment -- using a template on multiple html (ex :componentes/tiempo.html)
+th:fragment="interceptor" -- declaring the fragment
+th:replace="componentes/tiempo :: interceptor" -- using the fragment
+
+we can use the interceptors on just one Path using .addPathPatterns("/form") on the addInterceptors method
+examples are just to verify a login or to debug a certain part of the web application
+
+on the interceptor you can check the HTTP Method
+it will be useful to use the interceptor on a method that shares the same path
+you have to be careful on this condition, it needs to be handled on both preHandler and postHandler
+
+to redirect on the Handlers when the validation fails you must use response.sendRedirect
+you must put your root base (request.getContextPath().concat("/URL"));
+
 ```
 
 # Built With
